@@ -178,8 +178,8 @@ def chameleon():
     parser.add_argument('--num_layers_a', type=int, default=4, help='num_layers_a')
     parser.add_argument('--epoch', type=int, default=100000, help='')
     parser.add_argument('--patience', type=int, default=5000, help='')
-    parser.add_argument('--lr', type=float, default=0.01, help='')            # 固定lr=0.01
-    parser.add_argument('--weight_decay', type=float, default=0.1, help='')   # 固定weight_decay = 0.1
+    parser.add_argument('--lr', type=float, default=0.01, help='')
+    parser.add_argument('--weight_decay', type=float, default=0.1, help='')
     parser.add_argument('--update_interval', type=int, default=1, help='')
     parser.add_argument('--random_seed', type=int, default=2024, help='')
     # loss weight
@@ -198,18 +198,18 @@ def dblp():
     parser.add_argument('--weight_soft_h', type=int, default=3, help='weight_soft_h')
     parser.add_argument('--weight_soft_S', type=int, default=3, help='weight_soft_S')
     parser.add_argument('--K', type=int, default=300, help='discretize with k')
-    parser.add_argument('--hidden_dim_x', type=int, default=256, help='hidden_dim_x') #有改动
-    parser.add_argument('--output_dim_x', type=int, default=128, help='output_dim_x') #有改动
+    parser.add_argument('--hidden_dim_x', type=int, default=256, help='hidden_dim_x')
+    parser.add_argument('--output_dim_x', type=int, default=128, help='output_dim_x')
     parser.add_argument('--hidden_dim_a', type=int, default=256, help='hidden_dim_a')
     parser.add_argument('--output_dim_a', type=int, default=128, help='output_dim_a')
-    parser.add_argument('--hidden_dim_g', type=int, default=256, help='hidden_dim_g')#有改动
-    parser.add_argument('--output_dim_g', type=int, default=128, help='output_dim_g')#有改动
+    parser.add_argument('--hidden_dim_g', type=int, default=256, help='hidden_dim_g')
+    parser.add_argument('--output_dim_g', type=int, default=128, help='output_dim_g')
     parser.add_argument('--num_layers_x', type=int, default=2, help='num_layers_x')
     parser.add_argument('--num_layers_a', type=int, default=4, help='num_layers_a')
     parser.add_argument('--epoch', type=int, default=100000, help='')
     parser.add_argument('--patience', type=int, default=5000, help='')
     parser.add_argument('--lr', type=float, default=0.0005, help='')
-    parser.add_argument('--weight_decay', type=float, default=5e-7, help='') # weight_decay=5e-5跑到过90.8
+    parser.add_argument('--weight_decay', type=float, default=5e-7, help='')
     parser.add_argument('--update_interval', type=int, default=1, help='')
     parser.add_argument('--random_seed', type=int, default=2024, help='')
     # loss weight
@@ -396,7 +396,7 @@ def acm05():
     return args
 
 
-def get_settings(dataset='acm'):
+def get_settings(dataset):
     args_dic = {
         'workers': workers(),
         'minesweeper': minesweeper(),
