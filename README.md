@@ -1,9 +1,14 @@
 # Homophily-Related: Adaptive Hybrid Graph Filter for Multi-View Graph Clustering
 Zichen Wen, Yawen Ling, Yazhou Ren, Tianyi Wu, Jianpeng Chen, Xiaorong Pu, Zhifeng Hao, Lifang He
 
+ </div>
+<div align="center">
+    <a href="https://arxiv.org/pdf/2401.02682.pdf"><img src="Paper-Arxiv-orange.svg" ></a>
+</div>
 
 
-This is the source code for paper: Homophily-Related: Adaptive Hybrid Graph Filter for Multi-View Graph Clustering, accepted by AAAI 2024.
+
+This is the source code for the paper: Homophily-Related: Adaptive Hybrid Graph Filter for Multi-View Graph Clustering, accepted by AAAI 2024.
 
 ## Requirements
 
