@@ -34,45 +34,16 @@ This is the source code for the paper: Homophily-Related: Adaptive Hybrid Graph 
 ## Test AHGFC
 
 ```python
-# Test AHGFC on Texas dataset
-python AHGFC_test.py --dataset 'texas' 
-
-# Test AHGFC on Chameleon dataset
-python AHGFC_test.py --dataset 'chameleon' 
-
-# Test AHGFC on ACM dataset
-python AHGFC_test.py --dataset 'acm'
-
-# Test AHGFC on Wiki_cooc dataset
-python AHGFC_test.py --dataset 'wiki_cooc' 
-
-# Test AHGFC on Minesweeper dataset
-python AHGFC_test.py --dataset 'minesweeper' 
-
-# Test AHGFC on Workers dataset
-python AHGFC_test.py --dataset 'workers'
+# Test AHGFC
+python AHGFC_test.py
 ```
 
 ## Train AHGFC
 
 ```python
-# Train AHGFC on Texas dataset
-python AHGFC_train.py --dataset 'texas' 
+# Train AHGFC
+python AHGFC_train.py
 
-# Train AHGFC on Chameleon dataset
-python AHGFC_train.py --dataset 'chameleon' 
-
-# Train AHGFC on ACM dataset
-python AHGFC_train.py --dataset 'acm'
-
-# Train AHGFC on Wiki_cooc dataset
-python AHGFC_train.py --dataset 'wiki_cooc' 
-
-# Train AHGFC on Minesweeper dataset
-python AHGFC_train.py --dataset 'minesweeper' 
-
-# Train AHGFC on Workers dataset
-python AHGFC_traint.py --dataset 'workers'
 ```
 
 ## Citation
