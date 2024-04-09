@@ -13,8 +13,8 @@ import pandas as pd
 from settings import get_settings
 from Visualization import plt_tsne
 
-parser = argparse.ArgumentParser()
-parser.add_argument('--dataset', type=str, default='texas', help='datasets: texas, chameleon, minesweeper, acm, acm00, acm01, acm02, acm03, acm04, acm05')
+parser = argparse.ArgumentParser(description='general settings')
+# parser.add_argument('--dataset', type=str, default='texas', help='datasets: texas, chameleon, minesweeper, acm, acm00, acm01, acm02, acm03, acm04, acm05')
 parser.add_argument('--train', type=bool, default=False, help='training mode')
 parser.add_argument('--cuda_device', type=int, default=0, help='')
 parser.add_argument('--use_cuda', type=bool, default=True, help='')
@@ -28,11 +28,12 @@ args = parser.parse_args()
 n = 0
 train = args.train
 if args.train:
-    print('\n\033[1;32mTraining mode\033[0m')
+    print('\033[1;32mTraining mode\033[0m')
 else:
-    print('\n\033[1;32mTest mode\033[0m')
+    print('\033[1;32mTest mode\033[0m')
 
-dataset = args.dataset
+dataset = input('\n\033[1;32mEnter the dataset name: \nOptions: texas, chameleon, acm, wiki_cooc, minesweeper, workers\n\033[0m')
+# dataset = args.dataset
 use_cuda = args.use_cuda
 cuda_device = args.cuda_device
 

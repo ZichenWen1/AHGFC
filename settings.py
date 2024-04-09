@@ -1,7 +1,5 @@
 import argparse
 
-parser = argparse.ArgumentParser()
-
 def wiki_cooc():
     parser = argparse.ArgumentParser()
     parser.add_argument('--model_name', type=str, default='AHGFC', help='model_name')
